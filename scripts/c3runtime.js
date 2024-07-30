@@ -4583,7 +4583,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Arr.Acts.Pop,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Text.Acts.SetText
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Cnds.TriggerOnce
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4617,9 +4618,10 @@ self.C3_JsPropNameTable = [
 	{butonlarr: 0},
 	{dogrutext: 0},
 	{yanlistext: 0},
-	{Sprite: 0},
+	{end: 0},
 	{meb: 0},
-	{Sprite2: 0},
+	{kartal: 0},
+	{tebrik: 0},
 	{butonlar: 0},
 	{randomsoru: 0},
 	{dogru_sayisi: 0},
@@ -4655,9 +4657,10 @@ self.InstanceType = {
 	butonlarr: class extends self.ISpriteInstance {},
 	dogrutext: class extends self.ITextInstance {},
 	yanlistext: class extends self.ITextInstance {},
-	Sprite: class extends self.ISpriteInstance {},
+	end: class extends self.ISpriteInstance {},
 	meb: class extends self.ISpriteInstance {},
-	Sprite2: class extends self.ISpriteInstance {},
+	kartal: class extends self.ISpriteInstance {},
+	tebrik: class extends self.ISpriteInstance {},
 	butonlar: class extends self.ISpriteInstance {}
 }
 }
