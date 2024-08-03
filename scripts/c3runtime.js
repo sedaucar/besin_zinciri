@@ -4552,9 +4552,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.System.Cnds.Compare,
+		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.Sprite.Cnds.IsVisible,
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Sprite.Cnds.IsAnimPlaying,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
@@ -4562,9 +4565,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.System.Cnds.OnLayoutEnd,
-		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Browser.Acts.RequestFullScreen,
@@ -4583,8 +4584,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Arr.Acts.Pop,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Text.Acts.SetText,
-		C3.Plugins.System.Cnds.TriggerOnce
+		C3.Plugins.Text.Acts.SetText
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4773,6 +4773,9 @@ self.C3_ExpressionFuncs = [
 		() => "muzik",
 		() => "ses",
 		() => "open",
+		() => "hazirlayan",
+		() => "kaynakca",
+		() => "butonlar",
 		() => "close",
 		() => "end",
 		() => "game",
